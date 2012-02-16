@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <repositories>
     <repository>
-      <id>msgpack</id>
+      <id>msgpack.org</id>
       <url>http://msgpack.org/maven2/</url>
     </repository>
   </repositories>
@@ -16,11 +16,29 @@
   		<version>0.6.5</version>
   		<type>jar</type>
   	</dependency>
+  	<!--
   	<dependency>
   		<groupId>org.msgpack</groupId>
   		<artifactId>msgpack-rpc</artifactId>
   		<version>0.6.1-devel</version>
   		<type>jar</type>
+  	</dependency>
+  	-->
+  	<dependency>
+  		<groupId>org.jboss.netty</groupId>
+  		<artifactId>netty</artifactId>
+  		<version>3.2.7.Final</version>
+  		<type>jar</type>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-api</artifactId>
+  		<version>1.6.4</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-log4j12</artifactId>
+  		<version>1.6.4</version>
   	</dependency>
   </dependencies>
 </project>
