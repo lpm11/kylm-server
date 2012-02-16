@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.kyserv</groupId>
+  <artifactId>kylm-server</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <repositories>
+    <repository>
+      <id>msgpack</id>
+      <url>http://msgpack.org/maven2/</url>
+    </repository>
+  </repositories>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.msgpack</groupId>
+  		<artifactId>msgpack</artifactId>
+  		<version>0.6.5</version>
+  		<type>jar</type>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.msgpack</groupId>
+  		<artifactId>msgpack-rpc</artifactId>
+  		<version>0.6.1-devel</version>
+  		<type>jar</type>
+  	</dependency>
+  </dependencies>
+</project>
