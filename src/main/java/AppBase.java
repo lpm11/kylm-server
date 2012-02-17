@@ -13,10 +13,11 @@ public class AppBase {
         optparse.accepts("lm","Language model file name.").withRequiredArg();
         OptionSet opt = optparse.parse(args);
 
+        KylmServer ks = new KylmServer((String)opt.valueOf("lm"));
     	EventLoop loop = EventLoop.defaultEventLoop();
 
         Server svr = new Server(loop);
-        svr.serve(new KylmServer((String)opt.valueOf("lm")));
+        svr.serve(ks);
 
         try {
         	svr.listen(Integer.valueOf((String)opt.valueOf("port")));
