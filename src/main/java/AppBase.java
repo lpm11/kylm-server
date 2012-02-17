@@ -17,8 +17,12 @@ public class AppBase {
 
         Server svr = new Server(loop);
         svr.serve(new KylmServer((String)opt.valueOf("lm")));
-        svr.listen(Integer.valueOf((String)opt.valueOf("port")));
 
-        loop.join();
+        try {
+        	svr.listen(Integer.valueOf((String)opt.valueOf("port")));
+        	loop.join();
+        } finally {
+        	svr.getEventLoop().shutdown();
+        }
     }
 }
