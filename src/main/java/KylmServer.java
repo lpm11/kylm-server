@@ -33,6 +33,10 @@ public class KylmServer {
 		return lm.getWordEntropy(getWordIds(words),pos);
 	}
 
+	public String[] getVocabulary() {
+		return lm.getVocabulary();
+	}
+
 	/*
 	 * Following code not works well in some environment (´・ω・｀)
 
@@ -71,5 +75,13 @@ public class KylmServer {
 
 	public boolean isClosed() {
 		return lm.isClosed();
+	}
+
+	public int getN() {
+		return lm.getN();
+	}
+
+	public void setN(int n) {
+		lm.setN(n);
 	}
 }
